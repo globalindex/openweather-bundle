@@ -8,6 +8,18 @@
             <trans-unit id="tl_settings.openweather_api_key.1">
                 <source>Please enter your OpenWeatherMap.org API key.</source>
             </trans-unit>
+            <trans-unit id="tl_settings.openweather_place.0">
+                <source>Place</source>
+            </trans-unit>
+            <trans-unit id="tl_settings.openweather_place.1">
+                <source>Please enter one Weather Place.</source>
+            </trans-unit>
+            <trans-unit id="tl_settings.openweather_state_code.0">
+                <source>State Code</source>
+            </trans-unit>
+            <trans-unit id="tl_settings.openweather_state_code.1">
+                <source>Please enter one Weather State Code for Weater Place to get geographical coordinates.</source>
+            </trans-unit>
             <trans-unit id="tl_settings.openweather_legend">
                 <source>OpenWeatherMap</source>
             </trans-unit>

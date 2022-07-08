@@ -10,6 +10,22 @@
                 <source>Please enter your OpenWeatherMap.org API key.</source>
                 <target>Bitte geben Sie Ihren OpenWeatherMap.org API Schlüssel ein.</target>
             </trans-unit>
+            <trans-unit id="tl_settings.openweather_place.0">
+                <source>Place</source>
+                <target>Ort</target>
+            </trans-unit>
+            <trans-unit id="tl_settings.openweather_place.1">
+                <source>Please enter one Weather Place.</source>
+                <target>Bitte geben Sie ein Wetter Ort ein.</target>
+            </trans-unit>
+            <trans-unit id="tl_settings.openweather_state_code.0">
+                <source>State Code</source>
+                <target>PLZ</target>
+            </trans-unit>
+            <trans-unit id="tl_settings.openweather_state_code.1">
+                <source>Please enter one Weather State Code for Weater Place to get geographical coordinates.</source>
+                <target>Bitte geben Sie ein Wetter PLZ ein, um die georafische GEO-Lokation automatisch zu ermitteln.</target>
+            </trans-unit>
             <trans-unit id="tl_settings.openweather_legend">
                 <source>OpenWeatherMap</source>
                 <target>OpenWeatherMap</target>
