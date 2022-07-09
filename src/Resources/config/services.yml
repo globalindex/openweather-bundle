@@ -1,3 +1,9 @@
 services:
     _defaults:
         autoconfigure: true
+
+    contao.cron.open_weather_data:
+        class: Webinteger\OpenWeatherBundle\Cron\OpenWeatherCron
+        arguments:
+            - '@contao.framework'
+            - '@?monolog.logger.contao.cron'

@@ -4,44 +4,54 @@ declare(strict_types=1);
 
 use Contao\DC_Table;
 
-$GLOBALS['TL_DCA']['tl_openweather'] = [
-    'config' => [
+$GLOBALS['TL_DCA']['tl_openweather'] = array
+(
+    'config' => array
+    (
         'dataContainer' => DC_Table::class,
         'notCopyable' => true,
         'notEditable' => true,
         'notCreatable' => true,
-        'sql' => [
-            'keys' => [
+        'sql' => array(
+            'keys' => array(
                 'id' => 'primary'
-            ]
-        ]
-    ],
-    'fields' => [
-        'id' => [
+            )
+        )
+    ),
+    'fields' => array
+    (
+        'id' => array
+        (
             'sql' => "int(10) unsigned NOT NULL auto_increment"
-        ],
-        'tstamp' => [
+        ),
+        'tstamp' => array
+        (
             'sql' => "int(10) unsigned NOT NULL default 0"
-        ],
-        'place' => [
+        ),
+        'place' => array
+        (
             'inputType' => 'text',
             'sql' => "varchar(255) NOT NULL default ''"
-        ],
-        'lat' => [
+        ),
+        'lat' => array
+        (
             'inputType' => 'text',
             'sql' => "varchar(255) NOT NULL default ''"
-        ],
-        'lon' => [
+        ),
+        'lon' => array
+        (
             'inputType' => 'text',
             'sql' => "varchar(255) NOT NULL default ''"
-        ],
-        'country' => [
+        ),
+        'country' => array
+        (
             'inputType' => 'text',
             'sql' => "varchar(255) NOT NULL default ''"
-        ],
-        'state' => [
+        ),
+        'state' => array
+        (
             'inputType' => 'text',
             'sql' => "varchar(255) NOT NULL default ''"
-        ]
-    ],
-];
+        )
+    )
+);

@@ -11,26 +11,26 @@ declare(strict_types=1);
 
 use Contao\CoreBundle\DataContainer\PaletteManipulator;
 
-$GLOBALS['TL_DCA']['tl_settings']['fields']['openweather_api_key'] = [
+$GLOBALS['TL_DCA']['tl_settings']['fields']['openweather_api_key'] = array(
     'label' => &$GLOBALS['TL_LANG']['tl_settings']['openweather_api_key'],
     'exclude' => true,
     'inputType' => 'text',
-    'eval' => ['maxlength' => 255, 'tl_class' => 'w50'],
-];
+    'eval' => array('maxlength' => 255, 'tl_class' => 'w50'),
+);
 
-$GLOBALS['TL_DCA']['tl_settings']['fields']['openweather_place'] = [
+$GLOBALS['TL_DCA']['tl_settings']['fields']['openweather_place'] = array(
     'label' => &$GLOBALS['TL_LANG']['tl_settings']['openweather_place'],
     'exclude' => true,
     'inputType' => 'text',
-    'eval' => ['maxlength' => 255, 'tl_class' => 'w50 clr'],
-];
+    'eval' => array('maxlength' => 255, 'tl_class' => 'w50 clr'),
+);
 
-$GLOBALS['TL_DCA']['tl_settings']['fields']['openweather_state_code'] = [
+$GLOBALS['TL_DCA']['tl_settings']['fields']['openweather_state_code'] = array(
     'label' => &$GLOBALS['TL_LANG']['tl_settings']['openweather_state_code'],
     'exclude' => true,
     'inputType' => 'text',
-    'eval' => ['maxlength' => 255, 'tl_class' => 'w50'],
-];
+    'eval' => array('maxlength' => 255, 'tl_class' => 'w50'),
+);
 
 PaletteManipulator::create()
     ->addLegend('openweather_legend', 'chmod_legend', PaletteManipulator::POSITION_AFTER)
