@@ -1,0 +1,3 @@
+webinteger.openweatherbundle.controller:
+    resource: ../../Controller
+    type: annotation

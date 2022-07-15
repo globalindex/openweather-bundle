@@ -1,0 +1,9 @@
+# Webinteger\OpenWeatherBundle\Controller\BackendModule\OpenWeatherBackendController:
+#     path: /contao/openweather
+#     _defaults:
+#         _scope: backend
+#         _controller: Webinteger\OpenWeatherBundle\Controller\BackendModule\OpenWeatherBackendController
+
+webinteger.openweatherbundle.controllers:
+    resource: ../../Controller
+    type: annotation

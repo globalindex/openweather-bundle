@@ -1,9 +1,20 @@
 services:
     _defaults:
+        autowire: true
         autoconfigure: true
 
-    contao.cron.open_weather_data:
+    Webinteger\OpenWeatherBundle\:
+        resource: '*'
+        exclude: '../src/{DependencyInjection}'
+
+    webinteger.openweatherbundle:
+        alias: Webinteger\OpenWeatherBundle
+        deprecated: 'The "%alias_id%" alias is deprecated. Do not use it anymore.'
+
+    webinteger.openweather.cron:
         class: Webinteger\OpenWeatherBundle\Cron\OpenWeatherCron
         arguments:
             - '@contao.framework'
-            - '@?monolog.logger.contao.cron'
+            - '@?logger'
+        tags:
+            - { name: openweather.cron, method: onHourly }

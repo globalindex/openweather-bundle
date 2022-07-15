@@ -1,0 +1,11 @@
+services:
+    _defaults:
+        autoconfigure: true
+
+    webinteger.openweatherbundle.listener.backend_menu:
+        class: Webinteger\OpenWeatherBundle\EventListener\BackendMenuListener
+        arguments:
+            - '@router'
+            - '@request_stack'
+        tags:
+            - { name: kernel.event_listener, event: contao.backend_menu_build,  priority: -255 }
